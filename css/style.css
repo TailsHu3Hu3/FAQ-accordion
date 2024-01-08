@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-purple: hsl(292, 42%, 14%);
+    --light-purple: hsl(292, 77%, 36%);
+    --light-pink: hsl(275, 100%, 97%); 
+}
+
+/********************
+*       BODY        *
+********************/
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.background {
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+    height: 40vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/********************
+*       BOX        *
+********************/
+
+.box {
+    width: 600px;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--dark-purple);
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    display: inline-block;
+    color: var(--dark-purple);
+}
+
+h3 {
+    padding: 10px 0 20px 0;
+    font-size: 16px;
+    width: 475px;
+    display: inline-block;
+    color: var(--dark-purple);
+    font-weight: 600;
+    /*border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 0.5px;*/
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.buttonPlus {
+    display: inline-block;
+    position: relative;
+    top: 10px; 
+}
+
+.buttonPlus:hover {
+    cursor:pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    border-bottom: solid 1px var(--light-pink);
+}
+
+/********************
+*      FOOTER       *
+********************/
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-purple);
+}
+
+.myLink {
+    color: #3c065e;
+}
+
+/********************
+*       MEDIA       *
+********************/
+
+@media (max-width: 550px) {
+
+    .container {
+        height: max-content
+    }
+    .box {
+        width: 300px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .starImg {
+        width: 20px;
+    }
+
+    h3 {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .centrifier {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .buttonPlus {
+        top: -5px;
+    }
+}
+
+/********************
+*       HOVER       *
+********************/
+
+a:hover {
+    color: var(--light-purple);
+    transition-duration: 300ms;
+}
+
+h3:hover {
+    color: var(--light-purple);
+    cursor:default;
+    transition-duration: 300ms;
+}
