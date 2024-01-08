@@ -51,7 +51,7 @@ h1 {
     color: var(--dark-purple);
 }
 
-h3 {
+h2 {
     padding: 10px 0 20px 0;
     font-size: 16px;
     width: 475px;
@@ -131,7 +131,7 @@ a {
         width: 20px;
     }
 
-    h3 {
+    h2 {
         width: 200px;
         font-size: 14px;
     }
@@ -156,7 +156,7 @@ a:hover {
     transition-duration: 300ms;
 }
 
-h3:hover {
+h2:hover {
     color: var(--light-purple);
     cursor:default;
     transition-duration: 300ms;
